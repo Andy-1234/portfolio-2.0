@@ -114,7 +114,8 @@ body{
     display: block;
   }
   
-  .drop-con2 a:hover {background-color: darkgray}
+  .drop-con2 a:hover{ 
+    background-color: darkgray}
   
   .dropdown2:hover .drop-con2 {
     display: block;
@@ -127,15 +128,30 @@ body{
     width: 100%;
     height: 2304px;
     display: grid;
-    grid-row: repeat(8,lr);
-    grid-column: repeat(6,lr);
+    grid-template-rows:  repeat(8,lr);
+    grid-template-columns:  repeat(6,lr);
   }
-  .g1{}
-  .g2{}
-  .g3{}
-  .g4{}
-  .g5{}
-  .g6{}
-  .g7{}
-  .g8{}
+  .g1{
+    display: auto;
+    grid-row: 1/3;
+    grid-column: 1/6;
+  }
+
+  .g2{
+    display: auto;
+    grid-row: 3/5;
+    grid-column: 1/6;
+  }
+
+  .g3{
+    display: auto;
+    grid-row: 5/7;
+    grid-column: 1/6;
+  }
+
+  .g4{
+    display: auto;
+    grid-row: 7/9;
+    grid-column: 1/6;
+  }
 }
